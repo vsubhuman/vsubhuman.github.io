@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Intro"
 date:   2021-07-24
 categories: blog
