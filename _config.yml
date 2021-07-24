@@ -1,9 +1,11 @@
 title: vsubs
 email: email@vsubs.ru
 description: >- # this means to ignore newlines until "baseurl:"
-  Coding and shitposting
+  Coding and shitposting!
+  A blog by Ruslan Dudin a software developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "vsubhuman.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  vsubhuman
 
 theme: jekyll-theme-tactile
+permalink: /:title
