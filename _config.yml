@@ -16,11 +16,11 @@
 remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/default.css"
 locale: en-US
-title: "vsubs"
+title: "Ruslan Dudin"
 description: "Coding and shitposting!"
 baseurl: # the subpath of your site, e.g. "/blog"
 url: "https://vsubhuman.com"
-logo: red-triangle.png
+logo: ruslan.png
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
