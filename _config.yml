@@ -1,9 +1,10 @@
 title: vsubs
 email: email@vsubs.ru
-description: Coding and shitposting!
-A blog by Ruslan Dudin a software developer.
+description: >
+  Coding and shitposting!
+  A blog by Ruslan Dudin a software developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "vsubhuman.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "vsubhuman.com"
 github_username:  vsubhuman
 
 theme: jekyll-theme-tactile
