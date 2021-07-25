@@ -41,9 +41,6 @@ Theme page: [https://jekyllthemes.io/theme/so-simple-theme](https://jekyllthemes
 
 GitHub: [https://github.com/mmistakes/so-simple-theme](https://github.com/mmistakes/so-simple-theme)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+You can find the source code for Jekyll at GitHub: [jekyll](https://github.com/jekyll/jekyll)
 
-
-[jekyll-organization]: https://github.com/jekyll
+This website is hosted on GitHub Pages:[https://github.com/vsubhuman/vsubhuman.github.io](https://github.com/vsubhuman/vsubhuman.github.io) 
