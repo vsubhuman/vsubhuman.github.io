@@ -1,0 +1,8 @@
+{%- unless page.layout == 'collection' -%}
+  <time class="entry-date dt-published" datetime="{{ entry.date | date_to_xmlschema }}">
+    {% assign tags = entry.tags | sort %}
+    {%- for tag in tags -%}
+      <span class="page-taxonomy">{{ tag }}</span>
+    {%- endfor- %}
+  </time>
+{%- endunless -%}
