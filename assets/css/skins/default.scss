@@ -9,12 +9,12 @@
 
 /* Colors */
 $base-color: #000 !default;
-$text-color: #000 !default;
+$text-color: #226 !default;
 $accent-color: #34374C !default;
 $nav-color: #fff !default;
-$background-color: #fff !default;
-$nav-background-color: #000 !default;
-$code-background-color: tint($base-color, 95%) !default;
+$background-color: #fffffb !default;
+$nav-background-color: #226 !default;
+$code-background-color: tint($background-color, 95%) !default;
 $border-color: tint($base-color, 80%) !default;
 
 $primary-color: #000 !default;
@@ -42,3 +42,12 @@ $base0e: #6c71c4 !default;
 $base0f: #d33682 !default;
 
 @import "so-simple/skin";
+
+.site-nav ul {
+  border-radius: 3px;
+}
+.site-nav ul li a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 0.8rem;
+}
