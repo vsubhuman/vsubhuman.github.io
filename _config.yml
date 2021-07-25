@@ -104,3 +104,15 @@ footer_links:
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
+  - title: GitHub
+    url: https://github.com/vsubhuman
+    icon: fab fa-github
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/vsubhuman
+    icon: fab fa-linkedin-in
+  - title: Telegram
+    url: http://t.me/vsubhuman
+    icon: fab fa-telegram
+  - title: Telegram
+    url: mailto:email@vsubs.ru
+    icon: fas fa-envelope-square
