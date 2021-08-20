@@ -22,6 +22,53 @@
     if ( 'querySelector' in document && 'addEventListener' in window ) {
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
     }
+    function iterElements(elements, callback) {
+      Array.prototype.slice.call(elements).forEach(callback);
+    }
+    function iterTags(tagName, callback) {
+      iterElements(document.getElementsByTagName(tagName), callback);
+    }
+    function replaceTag(tagName, newElementSupplier) {
+      iterTags(tagName, e => {
+        const newElement = newElementSupplier(e);
+        [...e.attributes].forEach( attr => { newElement.setAttribute(attr.nodeName ,attr.nodeValue) });
+        newElement.innerHTML = e.innerHTML;
+        e.replaceWith(newElement);
+      });
+    }
+    function replaceTagPattern(tagName, newTagName='div', classes=[tagName], attributes={}) {
+      replaceTag(tagName, () => {
+        let el = document.createElement(newTagName);
+        (classes||[]).forEach(c => el.classList.add(c));
+        Object.entries(attributes||[]).forEach(([k ,v]) => el.setAttribute(k, v));
+        return el;
+      });
+    }
+    function addFootnoteIcons() {
+      iterElements(document.getElementsByClassName('foot'), e => {
+        let el = document.createElement('i');
+        el.classList.add('fas');
+        el.classList.add('fa-info-circle');
+        el.classList.add('foot-icon');
+        e.prepend(el);
+      });
+    }
+    function fixExternalLinks() {
+      iterTags('a', e => {
+        let target = e.getAttribute('href');
+        if (target.startsWith('http:') || target.startsWith('https:')) {
+          e.setAttribute('target', '_blank');
+        }
+      });
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+      replaceTagPattern('emph');
+      replaceTagPattern('emphl', 'span');
+      replaceTagPattern('foot');
+      replaceTagPattern('troll', 'img', ['troll'], { src: '/favicon.ico' });
+      addFootnoteIcons();
+      fixExternalLinks();
+    });
   </script>
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

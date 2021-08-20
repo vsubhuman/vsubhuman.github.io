@@ -18,7 +18,7 @@ Ruslan Dudin (`@vsubhuman`), a professional software developer since 2013, few y
 - A project with no good practices is not a lost hope, change one tiny thing to right in that project today.
 - Multi-paradigm over purism, having 10% of functional code in a project is better than 0%.
 - Being 10% agile is better than 0% agile. Every iteration is a chance to improve the process.
-- Monads are overrated.
+- Monads are overhyped.
 - // todo
 
 #### Main professional interests

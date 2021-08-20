@@ -24,7 +24,7 @@ $danger-color: #ee5f5b !default;
 $info-color: #52adc8 !default;
 
 /* Syntax highlighting (base16) colors */
-$base00: #fafafa !default;
+$base00: #efeff6 !default;
 $base01: #073642 !default;
 $base02: #586e75 !default;
 $base03: #657b83 !default;
@@ -50,4 +50,58 @@ $base0f: #d33682 !default;
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 0.8rem;
+}
+
+.emph {
+  font-size: 110%;
+  color: black;
+  background-color: #f0f0ff;
+  padding: 1em 2em;
+  border: 1px solid #eef;
+  border-left: 0.5em solid black;
+  border-radius: 7px;
+  margin-bottom: 1.5rem;
+}
+
+.emphl {
+  color: black;
+  background-color: #f0f0ff;
+  border: 1px solid #eef;
+  padding: 0 3px 0 3px;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.foot {
+  font-size: 85%;
+  display: inline-block;
+  background-color: #fcfcfc;
+  border: 2px ridge #dcdcdc;
+  padding: 1em 1em 0.7em;
+  color: #7b7b50;
+  border-radius: 0 15px 15px 15px;
+}
+
+.foot-icon {
+  margin-right: 7px;
+}
+
+.troll {
+  width: 20px;
+  padding-bottom: 0.2rem;
+}
+
+.toc {
+  border-left: 1px solid #dbeef6;
+  margin-bottom: 50px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.toc:not ol li {
+  margin-top: 7px;
+}
+ol li::marker {
+  color: #9f9f9f;
+  font-weight: bold;
 }
