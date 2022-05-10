@@ -19,7 +19,7 @@ locale: en-US
 title: "Ruslan Dudin"
 description: "Coding and shitposting!"
 baseurl: # the subpath of your site, e.g. "/blog"
-url: "https://vsubhuman.com"
+url: "https://vsubhuman.ru"
 logo: ruslan.png
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
